@@ -5,8 +5,8 @@
 var Simulation = function (containerName) {
     this.stage = new Konva.Stage({
         container: containerName,
-        width: 1600,
-        height: 1600
+        width: 800,
+        height: 800
     });
 
     var backGround = new Konva.Rect({
@@ -73,6 +73,10 @@ Simulation.prototype = {
     start: function () {
         this.running = true;
         this.tick();
+    },
+
+    stop: function () {
+        this.running = false;
     },
 
     _render: function () {

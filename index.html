@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
     <style>
-        #arena
-        {
+        #page {
             margin: 20px auto 20px auto;
-            width: 1600px;
+            width: 800px;
         }
+
+        #start-stop {
+            width: 800px;
+            height: 40px;
+            font-size: 16pt;
+        }
+
     </style>
 </head>
+
 <body>
-<div id="arena"></div>
-<script src="https://cdn.rawgit.com/konvajs/konva/1.6.5/konva.js"></script>
-<script src="simulation.js"></script>
-<script src="main.js"></script>
+    <div id="page">
+        <div id="arena"></div>
+        <input id="start-stop" type="button", value="Stop"></input>
+    </div>
+    <script src="https://cdn.rawgit.com/konvajs/konva/1.6.5/konva.js"></script>
+    <script src="simulation.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
