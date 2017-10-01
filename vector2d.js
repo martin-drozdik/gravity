@@ -14,6 +14,10 @@ Vector2d.prototype = {
         return this.x * this.x + this.y * this.y;
     },
 
+    euclideanNorm: function () {
+        return Math.sqrt(this.squaredNorm());
+    },
+
     makeOpposite: function () {
         return this.scale(-1);
     }
@@ -25,4 +29,8 @@ Vector2d.sum = function (left, right) {
 
 Vector2d.difference = function (left, right) {
     return new Vector2d(left.x - right.x, left.y - right.y);
+}
+
+Vector2d.copy = function (anything) {
+    return new Vector2d(anything.x, anything.y);
 }

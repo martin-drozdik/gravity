@@ -24,6 +24,8 @@ var Simulation = function (containerName, simulationState) {
     this.stage.add(backgroundLayer);
     this.planetsLayer = new Konva.Layer();
     this.stage.add(this.planetsLayer);
+    this.userInteractionLayer = new Konva.Layer();
+    this.stage.add(this.userInteractionLayer);
 
     this.start();
 }

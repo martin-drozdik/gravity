@@ -52,11 +52,8 @@
     stage.on('contentMousemove', function() {
         if(controlled) {
             var mousePos = stage.getPointerPosition();
-            var pos = arrow.points;
-            pos[2] = mousePos.x;
-            pos[3] = mousePos.y;
-            arrow.setAttr('x', mousePos.x);
-            console.log(pos);
+            var points = [100, 100, mousePos.x, mousePos.y];
+            arrow.setAttr('points', points);
             stage.draw();
         }
     });
