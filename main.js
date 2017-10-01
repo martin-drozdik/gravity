@@ -2,7 +2,7 @@
 
 (function () {
     window.onload = function () {
-        var sim = new Simulation('arena');
+        var sim = new Simulation('arena', makeStartingState());
 
         var startStopButton = document.getElementById("start-stop");
         startStopButton.onclick = function() {
