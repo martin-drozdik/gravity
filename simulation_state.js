@@ -11,7 +11,8 @@ var SimulationState = function (bodies) {
 }
 
 var makeStartingState = function () {
-    var bodies = [
+    var bodies =
+        [
             new Body(
             new Vector2d(102, 150),
             new Vector2d(0.4, 0.1),
@@ -23,6 +24,7 @@ var makeStartingState = function () {
             new Body(
             new Vector2d(500, 230),
             new Vector2d(0, 4),
-            5)];
+            5)
+        ];
     return new SimulationState(bodies);
 }
